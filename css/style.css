@@ -1,0 +1,53 @@
+/* Boozed Circle */
+
+.box-col {
+    border: 1px solid;
+    padding: 1em;
+}
+
+.bx-p {
+    margin: 1em auto;
+    border: 2px solid #ff0000;
+    padding: 1em 2em;
+    font-weight: 600;
+    color: #2e2ea5;
+    text-align: center;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    transform: rotate(360deg);
+    animation: transform-animation 3s infinite;
+    border-top-color: #ff0000;
+    border-top-style: dotted;
+    border-top-width: 4px;
+    border-right-color: #00ff14;
+    border-right-style: dashed;
+    border-right-width: 5px;
+    border-bottom-color: #0037ff;
+    border-bottom-style: double;
+    border-bottom-width: 6px;
+    border-left-color: #00ffe7;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.bx-h {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    animation: transform-animation2 2s infinite;
+}
+
+@keyframes transform-animation {
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes transform-animation2 {
+    to {
+        transform: rotate(360deg);
+    }
+}
